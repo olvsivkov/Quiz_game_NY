@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+
+.main-wrapper {
+  width: 95vw;
+  height: 95vw;
+  margin: auto;
+  background-color: blue;
+}
