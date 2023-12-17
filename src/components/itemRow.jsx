@@ -1,8 +1,10 @@
 import React, {useState} from "react";
 
-function Item({count, question}) {
+function Item({count, question, handleScoreFT, handleScoreST, answer, nameFT, nameST}) {
+
   const [isActive, setIsActive] = useState(false)
   const [isDisplayed, setIsDisplayed] = useState(true);
+  const [visibleAnswer, setVisibleAnswer] = useState(true)
 
   function handleActive(){
     setIsActive(true)
@@ -14,15 +16,23 @@ function Item({count, question}) {
     setIsDisplayed(false)
   }
 
+  const handleAnswerHidden = () => {
+    setVisibleAnswer(!visibleAnswer)
+  }
+
   return (
-      <div className="item-row-question-block" onClick={handleActive}>
-        {!isActive ? <span>{isDisplayed ? count: " "}</span> : (      
+      <div className="item-row-question-block block-hover" onClick={handleActive}>
+        {!isActive ? <div className="count-info">{isDisplayed ? count: " "}</div> : (      
           <div className="popup-active">
-            <div className="question-block">{question}</div>
-            <div className="answer-block">
-              <div className="team-one"></div>
-              <div className="false" onClick={handleNoneActive}></div>
-              <div className="team-two"></div>
+            <div className="question-block">
+              <div> {question} </div>
+              <button className="answer-btn" onClick={handleAnswerHidden}> Ответ </button>
+              <div className={visibleAnswer ? " hidden": " "} > {answer} </div>
+            </div>
+            <div className="answer-block" onClick={handleNoneActive}>
+              <div className="team-one" onClick={() => handleScoreFT(count)}>{nameFT}</div>
+              <div className="false">Нет ответа</div>
+              <div className="team-two" onClick={() => handleScoreST(count)}>{nameST}</div>
             </div>
           </div>)
           }
@@ -30,15 +40,22 @@ function Item({count, question}) {
   );
 }
 
-function ItemRow({data, index}) {
+function ItemRow({data, index, handleScoreFT, handleScoreST, nameFT, nameST}) {
+  const info = data[index]
+
   return (
     <div className="item-row-wrapper">
-      <div className="item-row-question-block">{data[index].name}</div>
-      {data[index].questions.map((item, i) => 
+      <div className="item-row-question-block">{info.name}</div>
+      {info.questions.map((item, i) => 
         <Item 
           key={i} 
           count={item.count} 
           question={item.question}
+          handleScoreFT={handleScoreFT}
+          handleScoreST={handleScoreST}
+          answer={item.answer}
+          nameFT={nameFT}
+          nameST={nameST}
         />)}
     </div>
   );
