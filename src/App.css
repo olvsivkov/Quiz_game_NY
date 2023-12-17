@@ -3,8 +3,59 @@
 }
 
 .main-wrapper {
-  width: 95vw;
-  height: 95vw;
+  width: 100vw;
+  height: 100vh;
   margin: auto;
   background-color: blue;
+  display: grid;
+  grid-template-rows: repeat(6 1fr);
+}
+
+.item-row-wrapper {
+  height: auto;
+  width: 100%;
+
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 30% repeat(5, 1fr);
+  justify-items: stretch;
+}
+
+.item-row-question-block{
+  border: 1px solid rgb(255, 255, 184);
+  color: aliceblue;
+  display: grid;
+  align-items: center;
+}
+
+.popup-active {
+  z-index: 1;
+  background-color: rgb(63, 63, 179);
+  color: white;
+  display: grid;
+  grid-template-rows: 9fr 2fr;
+  width: 95%;
+  height: 95%;
+  position: fixed;
+  top: 2%;
+  left: 2%;
+}
+
+.question-block {
+  border: 1px solid rgb(255, 255, 184);
+  height: 100%;
+  width: 100%;
+}
+
+.answer-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.answer-block > div {
+  border: 1px solid rgb(255, 255, 184);
+}
+
+.hidden {
+  display: none;
 }
