@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Quiz_game_NY/public/static/css/main.96d964e9.css",
-    "main.js": "/Quiz_game_NY/public/static/js/main.a3849bc0.js",
-    "index.html": "/Quiz_game_NY/public/index.html",
-    "main.96d964e9.css.map": "/Quiz_game_NY/public/static/css/main.96d964e9.css.map",
-    "main.a3849bc0.js.map": "/Quiz_game_NY/public/static/js/main.a3849bc0.js.map"
+    "main.css": "/Quiz_game_NY/build/static/css/main.96d964e9.css",
+    "main.js": "/Quiz_game_NY/build/static/js/main.a3849bc0.js",
+    "index.html": "/Quiz_game_NY/build/index.html",
+    "main.96d964e9.css.map": "/Quiz_game_NY/build/static/css/main.96d964e9.css.map",
+    "main.a3849bc0.js.map": "/Quiz_game_NY/build/static/js/main.a3849bc0.js.map"
   },
   "entrypoints": [
     "static/css/main.96d964e9.css",
