@@ -2,7 +2,7 @@
   "name": "historical-dates-test-task",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://olvsivkov.github.io/Quiz_game_NY/public",
+  "homepage": "https://olvsivkov.github.io/Quiz_game_NY/build",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
