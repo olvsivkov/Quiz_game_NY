@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function Item({count, question, handleScoreFT, handleScoreST, answer, nameFT, nameST}) {
+function Item({count, question, handleScoreFT, handleScoreST, answer, nameFT, nameST, name}) {
 
   const [isActive, setIsActive] = useState(false)
   const [isDisplayed, setIsDisplayed] = useState(true);
@@ -25,14 +25,14 @@ function Item({count, question, handleScoreFT, handleScoreST, answer, nameFT, na
         {!isActive ? <div className="count-info">{isDisplayed ? count: " "}</div> : (      
           <div className="popup-active">
             <div className="question-block">
-              <div> {question} </div>
+              {question}
               <button className="answer-btn" onClick={handleAnswerHidden}> Ответ </button>
               <div className={visibleAnswer ? " hidden": " "} > {answer} </div>
             </div>
             <div className="answer-block" onClick={handleNoneActive}>
-              <div className="team-one" onClick={() => handleScoreFT(count)}>{nameFT}</div>
+              <div className="team-one" onClick={() => handleScoreFT(count)}>{nameFT ? nameFT : "Нет названия команды ?"}</div>
               <div className="false">Нет ответа</div>
-              <div className="team-two" onClick={() => handleScoreST(count)}>{nameST}</div>
+              <div className="team-two" onClick={() => handleScoreST(count)}>{nameST ? nameST : "Нет названия команды ?"}</div>
             </div>
           </div>)
           }
@@ -42,7 +42,7 @@ function Item({count, question, handleScoreFT, handleScoreST, answer, nameFT, na
 
 function ItemRow({data, index, handleScoreFT, handleScoreST, nameFT, nameST}) {
   const info = data[index]
-
+  const nameForSing = info.name
   return (
     <div className="item-row-wrapper">
       <div className="item-row-question-block">{info.name}</div>
@@ -56,6 +56,7 @@ function ItemRow({data, index, handleScoreFT, handleScoreST, nameFT, nameST}) {
           answer={item.answer}
           nameFT={nameFT}
           nameST={nameST}
+          name={nameForSing}
         />)}
     </div>
   );

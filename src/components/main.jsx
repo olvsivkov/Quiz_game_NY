@@ -24,7 +24,7 @@ function Main() {
     setNameST(teamName)
   }
 
-  const dataArray = json.countries
+  const dataArray = json.items
   return (  
     <div className="main-wrapper">
       <Team 
@@ -35,7 +35,7 @@ function Main() {
         {
           dataArray.map( (_, index) => <ItemRow 
             key={index} 
-            data={json.countries} 
+            data={dataArray} 
             index={index} 
             handleScoreFT={handleScoreFT}
             handleScoreST={handleScoreST}

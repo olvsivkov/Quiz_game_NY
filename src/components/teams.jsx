@@ -23,12 +23,12 @@ function Team({score, handleGetName}) {
 
   return (
     <div className="team-wrapper">
-      <h4>{savedTeamName}</h4>
       <form>
         <label htmlFor="teamName" onClick={handleFormHidden} className='teamName'>Team Name:</label>
         <input type="text" id="teamName" value={teamName} onChange={handleInputChange} className={onActive ? "hidden": '' } autoComplete="off"/>
         <button type="button" onClick={handleSaveClick} className={onActive ? " hidden": "save-btn"}>Save</button>
       </form>
+      <h4>{savedTeamName}</h4>
       <div className='total-account'>
         <p>{score}</p>
       </div>

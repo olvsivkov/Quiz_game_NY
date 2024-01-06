@@ -1,63 +1,63 @@
 {
-  "countries": [
+  "items": [
     {
-      "name": "Country1",
+      "name": "Разминочные",
       "questions": [
-        {"question": "Question1", "count": "100", "answer": "answer1"},
-        {"question": "Question2", "count": "200", "answer": "answer2"},
-        {"question": "Question3", "count": "300", "answer": "answer3"},
-        {"question": "Question4", "count": "400", "answer": "answer4"},
-        {"question": "Question5", "count": "500", "answer": "answer5"}
+        {"question": "Что у коровы 4, а у женщины 2", "count": "100", "answer": "Ноги"},
+        {"question": "Именно это длится у свиньи 30 минут ", "count": "200", "answer": "Оргазм"},
+        {"question": "Многие свои правила и обычаи советская пионерская организация позаимствовала у скаутов. Одно из правил было: «Пионер не держит руки в карманах, ибо держащий руки в карманах …….». Закончите правило тремя словами", "count": "300", "answer": "не всегда готов"},
+        {"question": "Как в Татарстане в 80-е называли подростков, которые не входили в подростковые полукриминальные сообщества (группировки) ?", "count": "400", "answer": "чушпан"},
+        {"question": "Какая станция метро самая глубокая в Санкт-Петербурге ?", "count": "500", "answer": "Адиралтейская"}
       ]
     },
     {
-      "name": "Country2",
+      "name": "Однажны",
       "questions": [
-        {"question": "Question1", "count": "100", "answer": "answer1"},
-        {"question": "Question2", "count": "200", "answer": "answer2"},
-        {"question": "Question3", "count": "300", "answer": "answer3"},
-        {"question": "Question4", "count": "400", "answer": "answer4"},
-        {"question": "Question5", "count": "500", "answer": "answer5"}
+        {"question": "Этот элемент в таблице Менделеева под номером 1", "count": "100", "answer": "Водород"},
+        {"question": "В XV веке на Руси Новый год праздновали в этот осенний день", "count": "200", "answer": "1 сентября"},
+        {"question": "ОН – первый и последний президент СССР", "count": "300", "answer": "Михаил Горбачев"},
+        {"question": "Этот мифический персонаж надрывался, вкатывая камень на гору", "count": "400", "answer": "Сизиф"},
+        {"question": "ЕЕ сожгли на костре в Руане", "count": "500", "answer": "Жанна д’Арк"}
       ]
     },
     {
-      "name": "Country3",
+      "name": "Все ответы начинаются на букву «В»",
       "questions": [
-        {"question": "Question1", "count": "100", "answer": "answer1"},
-        {"question": "Question2", "count": "200", "answer": "answer2"},
-        {"question": "Question3", "count": "300", "answer": "answer3"},
-        {"question": "Question4", "count": "400", "answer": "answer4"},
-        {"question": "Question5", "count": "500", "answer": "answer5"}
+        {"question": "Столица Литвы", "count": "100", "answer": "Вильнюс"},
+        {"question": "ЭТОГО знатока «в интернетах» называли просто – Онотоле", "count": "200", "answer": "Вассерман"},
+        {"question": "Либеральная партия в Великобритании", "count": "300", "answer": "Виги"},
+        {"question": "Об ЭТИХ обворожительных женщинах, приковывающих взгляд, мы узнали из книги Роулинг «Гарри Поттер и Кубок огня»", "count": "400", "answer": "Вейлы"},
+        {"question": "Столица ЭТОГО американского штата – Шайенн", "count": "500", "answer": "Вайоминг"}
       ]
     },
     {
-      "name": "Country4",
+      "name": "Все ответы оканчиваются на букву «Я»",
       "questions": [
-        {"question": "Question1", "count": "100", "answer": "answer1"},
-        {"question": "Question2", "count": "200", "answer": "answer2"},
-        {"question": "Question3", "count": "300", "answer": "answer3"},
-        {"question": "Question4", "count": "400", "answer": "answer4"},
-        {"question": "Question5", "count": "500", "answer": "answer5"}
+        {"question": "Париж – столица ЭТОЙ страны", "count": "100", "answer": "Франция"},
+        {"question": "День взятия ЕЕ - 14 июля 1789 года", "count": "200", "answer": "Бастилия"},
+        {"question": "Четырёхугольник, у которого ровно одна пара противолежащих сторон параллельна", "count": "300", "answer": "Трапеция"},
+        {"question": "Именно ТАМ находятся Дворец дожей и площадь Сан-Марко", "count": "400", "answer": "Венеция"},
+        {"question": "Наука, исследующая размеры и форму Земли, её гравитационное поле, способы изображения земной поверхности на картах и планах", "count": "500", "answer": "Геодезия"}
       ]
     },
     {
-      "name": "Country5",
+      "name": "МОРОЗ",
       "questions": [
-        {"question": "Question1", "count": "100", "answer": "answer1"},
-        {"question": "Question2", "count": "200", "answer": "answer2"},
-        {"question": "Question3", "count": "300", "answer": "answer3"},
-        {"question": "Question4", "count": "400", "answer": "answer4"},
-        {"question": "Question5", "count": "500", "answer": "answer5"}
+        {"question": "ОН живет в Великом Устюге", "count": "100", "answer": "Дед Мороз"},
+        {"question": "Этот фильм-сказка Александра Роу соответствует теме", "count": "200", "answer": "«Морозко»"},
+        {"question": "Если в район приходит холодная воздушная масса, то наблюдаются ОНИ", "count": "300", "answer": "Заморозки"},
+        {"question": "Именно на этой станции в Антарктиде зарегистрирована минимальная температура на Земле", "count": "400", "answer": "«Восток»"},
+        {"question": "ОН – самая холодная планета Солнечной системы", "count": "500", "answer": "Уран"}
       ]
     },
     {
-      "name": "Country6",
+      "name": "Дурацкие изобретения",
       "questions": [
-        {"question": "Question1", "count": "100", "answer": "answer1"},
-        {"question": "Question2", "count": "200", "answer": "answer2"},
-        {"question": "Question3", "count": "300", "answer": "answer3"},
-        {"question": "Question4", "count": "400", "answer": "answer4"},
-        {"question": "Question5", "count": "500", "answer": "answer5"}
+        {"question": "В 1954 году в Британии изобрели дорожные знаки для ТАКИХ водителей", "count": "100", "answer": "Слепых"},
+        {"question": "В 1995 году бизнесмен из Техаса придумал «универсальный магнит» для обнаружения нефти, на деле этот прибор оказался ИМ", "count": "200", "answer": "Компасом"},
+        {"question": "В 1970 году Роберт Крик объявил о создании аппарата способного брать пробы грунта с Солнца. А назван аппарат, видимо, по аналогии, именно так.", "count": "300", "answer": "солнцеход"},
+        {"question": "Японцы создали прибор для собирания ЭТОГО. На деле робот путается в сторонах и получается бесформенный комочек. Назовите ЭТО одним японским словом", "count": "400", "answer": "Оригами"},
+        {"question": "Во второй половине 19 века был изобретен специальный пистолет от грабителей, а помещался гаджет в ЭТОМ аксессуаре", "count": "500", "answer": "В кошельке"}
       ]
     }
   ]
